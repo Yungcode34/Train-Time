@@ -1,0 +1,26 @@
+#name-header ,
+#destination-header,
+#frequency-header,
+#arrival-header,
+#minutes-header,
+td,
+th
+{
+    color: black;
+}
+#border3{
+    margin-bottom: 100px;
+}
+.jumbotron{
+background-image: url("http://worldofrailways.net/gallery/albums/userpics/10010/trainspotting_282009-07-10_11_1269.JPG");
+background-size: 100%;
+background-repeat: no-repeat;
+background-attachment: inherit;
+background-position: 50% 50%;
+
+}
+#border{
+    background-color: white;
+    opacity: .70;
+    font-weight: bold;
+}

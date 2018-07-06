@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron jumbotron-fluid rounded">
+            <div id="border" class="container text-center text-black">
+                <h1 class="display-4 text-center"> Train Departure Schedule </h1>
+                <p class="lead text-center">Know the fastest way to get to your destination</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <table id="border2" class="table text-white">
+            <thead>
+                <tr>
+                    <th scope="col" id="name-header">Train Name</th>
+                    <th scope="col" id="destination-header">Destination</th>
+                    <th scope="col" id="frequency-header"> Frequency (min)</th>
+                    <th scope="col" id="arrival-header">Next Arrival</th>
+                    <th scope="col" id="minutes-header">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <!-- Search bar code -->
+        <h4>Add Train</h4>
+        <div id="border3">
+            <div class="form-group input-group-sm mb-3">
+                <div>
+                    <span id="inputGroup-sizing-sm">Train Name</span>
+                </div>
+                <input id="name" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="form-group input-group-sm mb-3">
+                <div>
+                    <span id="inputGroup-sizing-sm">Destination</span>
+                </div>
+                <input id="destination" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="form-group input-group-sm mb-3">
+                <div>
+                    <span id="inputGroup-sizing-sm">First Train Time (HH:MM - Military time)</span>
+                </div>
+                <input id="start-date" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="form-group input-group-sm mb-3">
+                <div>
+                    <span id="inputGroup-sizing-sm">Frequency (Minutes)</span>
+                </div>
+                <input id="rate" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <button type="button" id="submit-btn" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+
+    <script src="assets/javascript/train.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</body>
+
+</html>
